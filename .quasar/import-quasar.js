@@ -11,7 +11,7 @@
 
 import Vue from 'vue'
 
-import {Quasar,QLayout,QLayoutHeader,QLayoutDrawer,QPageContainer,QPage,QToolbar,QToolbarTitle,QBtn,QIcon,QList,QListHeader,QItem,QItemMain,QItemSide,Ripple,Notify} from 'quasar'
+import {Quasar,QBtn,QIcon,QInput,QItem,QItemMain,QItemSide,QLayout,QLayoutHeader,QLayoutDrawer,QList,QListHeader,QPageContainer,QPage,QToolbar,QToolbarTitle,Ripple,Notify,Dialog} from 'quasar'
 
 
-Vue.use(Quasar, { config: {},components: {QLayout,QLayoutHeader,QLayoutDrawer,QPageContainer,QPage,QToolbar,QToolbarTitle,QBtn,QIcon,QList,QListHeader,QItem,QItemMain,QItemSide},directives: {Ripple},plugins: {Notify} })
+Vue.use(Quasar, { config: {},components: {QBtn,QIcon,QInput,QItem,QItemMain,QItemSide,QLayout,QLayoutHeader,QLayoutDrawer,QList,QListHeader,QPageContainer,QPage,QToolbar,QToolbarTitle},directives: {Ripple},plugins: {Notify,Dialog} })

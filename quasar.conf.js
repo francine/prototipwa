@@ -16,7 +16,7 @@ module.exports = function (ctx) {
       // 'mdi',
       // 'fontawesome'
     ],
-    supportIE: false,
+    supportIE: true,
     build: {
       scopeHoisting: true,
       // vueRouterMode: 'history',
@@ -41,27 +41,29 @@ module.exports = function (ctx) {
     // framework: 'all' --- includes everything; for dev only!
     framework: {
       components: [
+        'QBtn',
+        'QIcon',
+        'QInput',
+        'QItem',
+        'QItemMain',
+        'QItemSide',
         'QLayout',
         'QLayoutHeader',
         'QLayoutDrawer',
+        'QList',
+        'QListHeader',
         'QPageContainer',
         'QPage',
         'QToolbar',
-        'QToolbarTitle',
-        'QBtn',
-        'QIcon',
-        'QList',
-        'QListHeader',
-        'QItem',
-        'QItemMain',
-        'QItemSide'
+        'QToolbarTitle'
       ],
       directives: [
         'Ripple'
       ],
       // Quasar plugins
       plugins: [
-        'Notify'
+        'Notify',
+        'Dialog'
       ]
       // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
       // i18n: 'de' // Quasar language
